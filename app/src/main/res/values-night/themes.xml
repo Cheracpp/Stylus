@@ -1,0 +1,72 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Dark) -->
+    <style name="Base.Theme.Stylus" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color (Beige will be our accent) -->
+        <item name="colorPrimary">@color/beige_primary</item>
+        <item name="colorOnPrimary">@color/text_on_beige</item>
+        <item name="colorPrimaryContainer">@color/beige_darker</item>
+        <item name="colorOnPrimaryContainer">@color/text_on_beige</item>
+
+        <!-- Secondary (e.g., for other accents) -->
+        <item name="colorSecondary">@color/accent_green_dark</item>
+        <item name="colorOnSecondary">@color/text_on_dark</item>
+        <item name="colorSecondaryContainer">#2A4F4C</item>
+        <item name="colorOnSecondaryContainer">#C0EFE8</item>
+
+        <!-- Backgrounds and Surfaces -->
+        <item name="android:colorBackground">@color/dark_background</item>
+        <item name="colorOnBackground">@color/text_on_dark</item>
+        <item name="colorSurface">@color/dark_surface</item>
+        <item name="colorOnSurface">@color/text_on_dark</item>
+        <item name="colorSurfaceVariant">#3A3A3A</item> <!-- Dark gray for variants -->
+        <item name="colorOnSurfaceVariant">@color/text_on_dark_secondary</item>
+
+        <!-- Error color. -->
+        <item name="colorError">@color/error_color</item>
+        <item name="colorOnError">@color/black</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/dark_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item> <!-- Dark BG, light icons -->
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/dark_background</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">false</item>
+
+        <!-- Component Styles -->
+        <item name="materialCardViewStyle">@style/Widget.App.CardView.Dark</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar.Dark</item>
+        <item name="android:editTextStyle">@style/Widget.App.EditText.Dark</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout.Dark</item>
+        <item name="android:textColorPrimary">@color/text_on_dark</item>
+        <item name="android:textColorSecondary">@color/text_on_dark_secondary</item>
+    </style>
+
+    <style name="Theme.Stylus" parent="Base.Theme.Stylus" />
+
+    <!-- Component Styles for Dark Theme -->
+    <style name="Widget.App.CardView.Dark" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/dark_surface</item>
+        <item name="cardElevation">1dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="strokeColor">#424242</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.Dark" parent="Widget.Material3.Toolbar.Surface">
+        <item name="android:background">@color/dark_background</item>
+        <item name="titleTextColor">@color/text_on_dark</item>
+        <item name="navigationIconTint">@color/text_on_dark</item> <!-- For back arrow -->
+    </style>
+
+    <style name="Widget.App.EditText.Dark" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_rounded_bg_dark</item>
+        <item name="android:textColor">@color/text_on_dark</item>
+        <item name="android:textColorHint">@color/text_on_dark_secondary</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Dark" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/beige_primary</item>
+        <item name="hintTextColor">@color/beige_primary</item>
+    </style>
+</resources>

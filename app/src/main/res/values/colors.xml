@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Palette -->
+    <color name="beige_primary">#D4C5A7</color> <!-- A warm, elegant beige -->
+    <color name="beige_darker">#BCAFA0</color> <!-- Slightly darker beige for accents/containers -->
+    <color name="text_on_beige">#3A322F</color> <!-- Dark brown/gray for text on beige -->
+
+    <color name="dark_background">#121212</color> <!-- Off-black for dark theme background -->
+    <color name="dark_surface">#1E1E1E</color>   <!-- Slightly lighter for cards in dark theme -->
+    <color name="text_on_dark">#E0E0E0</color>    <!-- Light gray for text on dark backgrounds -->
+    <color name="text_on_dark_secondary">#A0A0A0</color> <!-- Medium gray for secondary text -->
+
+    <color name="light_background">#F7F7F7</color> <!-- Off-white for light theme background -->
+    <color name="light_surface">#FFFFFF</color>    <!-- White for cards in light theme -->
+    <color name="text_on_light">#212121</color>   <!-- Dark gray for text on light backgrounds -->
+    <color name="text_on_light_secondary">#757575</color> <!-- Medium gray for secondary text -->
+
+    <color name="accent_green_dark">#5C8D89</color> <!-- A muted teal/green for dark theme accents (like Grammarly) -->
+    <color name="accent_green_light">#A3D2CA</color> <!-- Lighter version for light theme -->
+
+    <color name="error_color">#CF6679</color> <!-- Standard Material error for dark -->
+    <color name="error_color_light">#B00020</color> <!-- Standard Material error for light -->
+
+    <color name="upgrade_button_light_bg">#FAEBCD</color> <!-- Light beige/yellow for upgrade button -->
+    <color name="upgrade_button_dark_bg">#4A443A</color>
+    <color name="upgrade_button_text">@color/text_on_beige</color>
+
+
+    <!-- Black & White -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+</resources>

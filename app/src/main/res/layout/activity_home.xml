@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/homeAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/homeToolbar"
+            style="?attr/toolbarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize">
+
+            <!-- Profile Icon / Initials (Placeholder) -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/profileIconContainer"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="start|center_vertical"
+                app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="?attr/colorPrimaryContainer"
+                app:strokeWidth="0dp"
+                android:layout_marginStart="16dp">
+                <TextView
+                    android:id="@+id/profileInitials"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="AC"
+                    android:textAppearance="?attr/textAppearanceTitleMedium"
+                    android:textColor="?attr/colorOnPrimaryContainer"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Upgrade Button (Placeholder) -->
+            <Button
+                android:id="@+id/buttonUpgrade"
+                style="@style/Widget.Material3.Button.ElevatedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:text="@string/button_upgrade"
+                android:backgroundTint="@color/upgrade_button_light_bg"
+                android:textColor="@color/upgrade_button_text"
+                android:layout_marginEnd="16dp"
+                app:cornerRadius="20dp"/>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Drafts Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/title_drafts"
+                    android:textAppearance="?attr/textAppearanceTitleLarge"
+                    android:textColor="?attr/colorOnBackground"/>
+                <ImageButton
+                    android:id="@+id/buttonInfoDrafts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_info_outline"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/desc_info"
+                    app:tint="?attr/colorOnSurfaceVariant"
+                    android:layout_marginStart="8dp"/>
+                <Button
+                    android:id="@+id/buttonAddNewDraft"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_add_new"
+                    android:textColor="?attr/colorPrimary"
+                    app:icon="@drawable/ic_add_circle"
+                    app:iconTint="?attr/colorPrimary"/>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDrafts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_draft_card_home"
+                tools:itemCount="3"
+                android:clipToPadding="false"
+                android:paddingEnd="8dp"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:id="@+id/textViewViewAllDrafts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_view_all"
+                android:textAppearance="?attr/textAppearanceLabelLarge"
+                android:textColor="?attr/colorPrimary"
+                android:layout_gravity="start"
+                android:paddingVertical="8dp"
+                android:layout_marginBottom="24dp"/>
+
+
+            <!-- Settings List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/item_setting_entry_home"
+                tools:itemCount="5"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

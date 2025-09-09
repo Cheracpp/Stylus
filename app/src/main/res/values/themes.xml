@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme (Light) -->
+    <style name="Base.Theme.Stylus" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color (Beige will be our accent) -->
+        <item name="colorPrimary">@color/beige_primary</item>
+        <item name="colorOnPrimary">@color/text_on_beige</item>
+        <item name="colorPrimaryContainer">@color/beige_darker</item>
+        <item name="colorOnPrimaryContainer">@color/text_on_beige</item>
+
+        <!-- Secondary (e.g., for other accents, could be a muted green) -->
+        <item name="colorSecondary">@color/accent_green_light</item>
+        <item name="colorOnSecondary">@color/text_on_light</item>
+        <item name="colorSecondaryContainer">#D5E8E6</item>
+        <item name="colorOnSecondaryContainer">#0F201E</item>
+
+        <!-- Backgrounds and Surfaces -->
+        <item name="android:colorBackground">@color/light_background</item>
+        <item name="colorOnBackground">@color/text_on_light</item>
+        <item name="colorSurface">@color/light_surface</item>
+        <item name="colorOnSurface">@color/text_on_light</item>
+        <item name="colorSurfaceVariant">#EDEDED</item> <!-- Slightly off-white for variants -->
+        <item name="colorOnSurfaceVariant">@color/text_on_light_secondary</item>
+
+        <!-- Error color. -->
+        <item name="colorError">@color/error_color_light</item>
+        <item name="colorOnError">@color/white</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/light_background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item> <!-- Light BG, dark icons -->
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/light_background</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+
+        <!-- Component Styles -->
+        <item name="materialCardViewStyle">@style/Widget.App.CardView.Light</item>
+        <item name="toolbarStyle">@style/Widget.App.Toolbar.Light</item>
+        <item name="android:editTextStyle">@style/Widget.App.EditText.Light</item>
+        <item name="textInputStyle">@style/Widget.App.TextInputLayout.Light</item>
+        <item name="android:textColorPrimary">@color/text_on_light</item>
+        <item name="android:textColorSecondary">@color/text_on_light_secondary</item>
+    </style>
+
+    <style name="Theme.Stylus" parent="Base.Theme.Stylus" />
+
+    <!-- Component Styles for Light Theme -->
+    <style name="Widget.App.CardView.Light" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/light_surface</item>
+        <item name="cardElevation">1dp</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="strokeColor">#E0E0E0</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.App.Toolbar.Light" parent="Widget.Material3.Toolbar.Surface">
+        <item name="android:background">@color/light_background</item>
+        <item name="titleTextColor">@color/text_on_light</item>
+        <item name="navigationIconTint">@color/text_on_light</item> <!-- For back arrow -->
+    </style>
+
+    <style name="Widget.App.EditText.Light" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_rounded_bg_light</item>
+        <item name="android:textColor">@color/text_on_light</item>
+        <item name="android:textColorHint">@color/text_on_light_secondary</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="Widget.App.TextInputLayout.Light" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/beige_primary</item>
+        <item name="hintTextColor">@color/beige_primary</item>
+    </style>
+
+</resources>

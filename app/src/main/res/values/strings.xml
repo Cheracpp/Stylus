@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Stylus</string>
+    <string name="app_name_short">Editor</string>
+    <string name="hint_write_or_paste">Write or paste your text here...</string>
+    <string name="button_check_grammar">Check Grammar</string>
+    <string name="status_initial_prompt">Enter text and click \'Check Grammar\'</string>
+
+    <string name="toast_suggestion_applied">Suggestion applied!</string>
+    <string name="status_checking">Checking…</string>
+    <string name="status_no_issues">No grammar issues found. Great job!</string>
+    <string name="status_suggestions_found">%1$d suggestion(s) found:</string> <!-- %1$d is for an integer -->
+    <string name="status_error">Error</string>
+    <string name="toast_getting_ai_explanation">Getting AI explanation…</string>
+    <string name="toast_ai_error">AI Error: %1$s</string> <!-- %1$s is for a string -->
+    <string name="dialog_title_ai_explanation">AI Explanation</string>
+    <string name="dialog_button_positive_ai_explanation">Got it!</string>
+    <string name="title_editor_activity">Editor</string>
+    <string name="button_upgrade">Upgrade</string>
+    <string name="title_drafts">Drafts</string>
+    <string name="desc_info">Information</string>
+    <string name="button_add_new">Add new</string>
+    <string name="text_view_all">View all</string>
+
+    <string name="setting_title_settings">Settings</string>
+    <string name="setting_title_appearance">Appearance</string>
+    <string name="setting_title_blocked_apps">Blocked apps</string>
+    <string name="setting_subtitle_blocked_apps">Turn off Stylus in specific apps</string>
+    <string name="setting_title_share_feedback">Share feedback</string>
+    <string name="setting_title_demo_tutorial">Demo tutorial</string>
+    <string name="setting_title_support">Support</string>
+    <string name="setting_title_version">Version %1$s</string>
+    <string name="title_new_draft">New Draft</string>
+    <string name="title_edit_draft">Edit Draft</string>
+    <string name="menu_save_draft">Save</string>
+    <string name="toast_draft_empty">Draft is empty, cannot save.</string>
+    <string name="toast_draft_saved">Draft saved!</string>
+    <string name="desc_draft_options">Draft options</string>
+    <string name="menu_delete_draft">Delete</string>
+    <string name="dialog_title_delete_draft">Delete Draft?</string>
+    <string name="dialog_message_delete_draft_confirm">Are you sure you want to delete the draft starting with \"%1$s\"?</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="dialog_button_delete">Delete</string>
+    <string name="toast_draft_deleted">Draft deleted</string>
+    <string name="dialog_message_delete_this_draft_confirm">Are you sure you want to delete this draft?</string>
+    <string name="status_checking_ai">Checking with AI…</string>
+    <string name="status_no_issues_ai">AI found no issues. Looking good!</string>
+    <string name="status_suggestions_found_ai">AI found %1$d potential issue(s).</string>
+    <string name="status_error_ai">AI Check Error</string>
+    <string name="status_initial_prompt_ai">Enter text and click \'Check Grammar\' to use AI checker.</string>
+    <string name="button_explain">Explain</string>
+    <string name="unknown_error_from_ai">Unknown error from AI.</string>
+
+    <!-- Dialog Messages -->
+    <string name="dialog_unsaved_changes_title">Unsaved Changes</string>
+    <string name="dialog_unsaved_changes_message">You have unsaved changes. Do you want to save before leaving?</string>
+    <string name="dialog_button_save">Save</string>
+    <string name="dialog_button_discard">Discard</string>
+
+    <!-- Toast Messages -->
+    <string name="toast_not_implemented"> (Not implemented)</string>
+    <string name="toast_view_all_drafts">View All Drafts clicked</string>
+    <string name="toast_profile_clicked">Profile icon clicked</string>
+    <string name="toast_upgrade_clicked">Upgrade clicked</string>
+    <string name="toast_drafts_info_clicked">Drafts info clicked</string>
+    <string name="toast_setting_prefix">Setting: </string>
+
+    <!-- Status Messages -->
+    <string name="status_checking_grammar">Checking grammar…</string>
+    <string name="status_no_corrections_needed">No corrections needed. Great job!</string>
+    <string name="status_correction_ready">Correction ready</string>
+
+    <string name="status_ready_to_check">Ready to check your text for grammar corrections</string>
+    <string name="corrected_text_title">Corrected Text</string>
+    <string name="corrections_details_title">Correction Details</string>
+    <string name="apply_correction">Apply Correction</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="error_empty_text">Please enter some text to check</string>
+    <string name="error_network">Network error. Please check your connection.</string>
+    <string name="error_server">Server error. Please try again later.</string>
+    <string name="corrections_count">%1$d correction(s) found</string>
+
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="12dp"
+    android:gravity="center_vertical"
+    android:background="?attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/imageViewSettingIcon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        tools:src="@drawable/ic_settings_sliders"
+        app:tint="?attr/colorPrimary"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/textViewSettingTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Settings"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="?attr/colorOnBackground"/>
+
+        <TextView
+            android:id="@+id/textViewSettingSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Turn off Grammarly in specific apps"
+            android:textAppearance="?attr/textAppearanceBodySmall"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewSettingChevron"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_right"
+        app:tint="?attr/colorOnSurfaceVariant"
+        android:visibility="gone"
+        tools:visibility="visible"/> <!-- Show only if it navigates -->
+
+</LinearLayout>

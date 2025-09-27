@@ -4,14 +4,9 @@ A modern Android application that provides intelligent grammar and writing corre
 
 ## Screenshots
 
-<div align="center">
-  <img src="screenshots/home-screen.png" alt="Home Screen" width="300" style="margin-right: 20px;">
-  <img src="screenshots/editor-interface.png" alt="Text Editor" width="300">
-</div>
-
-<div align="center">
-  <em>Home screen with draft management and Material Design 3 interface</em> &nbsp;&nbsp;&nbsp; <em>Text editor with grammar checking functionality</em>
-</div>
+|                              Home Screen                              |                                Text Editor                                 |
+|:---------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
+| <img src="screenshots/home-screen.png" alt="Home Screen" width="300"> | <img src="screenshots/editor-interface.png" alt="Text Editor" width="300"> |
 
 ## Key Features
 

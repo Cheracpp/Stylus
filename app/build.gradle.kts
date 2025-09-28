@@ -63,7 +63,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.11.0")
 
     // Hilt (Dependency Injection)
-    val hiltVersion = "2.52"
+    val hiltVersion = "2.51.1"
     implementation("com.google.dagger:hilt-android:$hiltVersion")
     ksp("com.google.dagger:hilt-compiler:$hiltVersion")
 

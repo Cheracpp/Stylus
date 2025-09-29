@@ -11,10 +11,9 @@ import com.aymane.stylus.databinding.ItemDraftCardHomeBinding
 
 class DraftsAdapter(
     private val onItemClicked: (DraftPreview) -> Unit,
-    private val onOptionClicked: (DraftPreview, View) -> Unit // View is the anchor for PopupMenu
+    private val onOptionClicked: (DraftPreview, View) -> Unit
 ) : ListAdapter<DraftPreview, DraftsAdapter.DraftViewHolder>(DraftDiffCallback()) {
 
-    // ... (onCreateViewHolder is same) ...
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DraftViewHolder {
         val binding = ItemDraftCardHomeBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return DraftViewHolder(binding)

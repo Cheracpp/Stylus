@@ -29,7 +29,7 @@ class SettingsAdapter(private val onItemClicked: (SettingItem) -> Unit) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(setting: SettingItem) {
             binding.textViewSettingTitle.text = setting.title
-            binding.imageViewSettingIcon.setImageResource(setting.iconResId) // This will set your placeholder circle
+            binding.imageViewSettingIcon.setImageResource(setting.iconResId)
 
             if (setting.subtitle != null) {
                 binding.textViewSettingSubtitle.text = setting.subtitle

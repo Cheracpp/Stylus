@@ -12,6 +12,11 @@ import kotlinx.coroutines.withContext
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * Repository for handling grammar correction operations.
+ *
+ * @property apiService The API service for grammar correction.
+ */
 @Singleton
 class GrammarRepository @Inject constructor(
     private val apiService: GrammarCorrectionApiService

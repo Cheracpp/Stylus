@@ -78,5 +78,6 @@
     <string name="error_network">Network error. Please check your connection.</string>
     <string name="error_server">Server error. Please try again later.</string>
     <string name="corrections_count">%1$d correction(s) found</string>
+    <string name="ac">AC</string>
 
 </resources>
